@@ -1,0 +1,369 @@
+<gazebo version='1.0'>
+  <model name="Aibo" >
+  <origin pose="0.0 0.120 0.146 0 0 0"/>
+
+    <link name="body" gravity="0">
+      <origin pose="0.0 0 0 0 1.5707 1.5707"/>
+   
+      <inertial mass="1.0">
+        <inertia ixx='1' ixy='0' ixz='0' iyy='1' iyz='0' izz='1'/>
+      </inertial> 
+      <collision name="geom">
+        <geometry>
+          <cylinder radius="0.055" length="0.240"/>
+        </geometry>
+      </collision>
+    
+      <visual name="visual">
+        <geometry>
+          <cylinder radius="0.055" length="0.240"/>
+        </geometry>
+        <material script="Gazebo/FlatBlack"/>
+      </visual>
+    </link>
+    
+<!------------------------------------------------------------------->
+<!--Potes, part superior-->
+    <link name="RF_up_leg" gravity="0">
+      <origin pose="0.055 0.065 -0.025 0 0 0"/>
+  
+      <inertial mass="0.1">
+        <inertia ixx='1' ixy='0' ixz='0' iyy='1' iyz='0' izz='1'/>
+      </inertial> 
+  
+      <collision name="geom">
+        <geometry>
+          <cylinder radius="0.020" length="0.075"/>
+        </geometry>
+      </collision>
+   
+      <visual name="visual">
+        <geometry>
+          <cylinder radius="0.020" length="0.075"/>
+        </geometry>
+        <material script="Gazebo/Green"/>
+      </visual>
+    </link>
+
+    <link name="LF_up_leg" gravity="0">
+      <origin pose="-0.055 0.065 -0.025 0 0 0"/>
+  
+      <inertial mass="0.1">
+        <inertia ixx='1' ixy='0' ixz='0' iyy='1' iyz='0' izz='1'/>
+      </inertial> 
+  
+      <collision name="geom">
+        <geometry>
+          <cylinder radius="0.020" length="0.075"/>
+        </geometry>
+      </collision>
+   
+      <visual name="visual">
+        <geometry>
+          <cylinder radius="0.020" length="0.075"/>
+        </geometry>
+        <material script="Gazebo/Red"/>
+      </visual>
+    </link>
+
+    <link name="RB_up_leg" gravity="0">
+      <origin pose="0.055 -0.065 -0.025 0 0 0"/>
+  
+      <inertial mass="0.1">
+        <inertia ixx='1' ixy='0' ixz='0' iyy='1' iyz='0' izz='1'/>
+      </inertial> 
+  
+      <collision name="geom">
+        <geometry>
+          <cylinder radius="0.020" length="0.075"/>
+        </geometry>
+      </collision>
+   
+      <visual name="visual">
+        <geometry>
+          <cylinder radius="0.020" length="0.075"/>
+        </geometry>
+        <material script="Gazebo/Yellow"/>
+      </visual>
+    </link>
+
+    <link name="LB_up_leg" gravity="0">
+      <origin pose="-0.055 -0.065 -0.025 0 0 0"/>
+  
+      <inertial mass="0.1">
+        <inertia ixx='1' ixy='0' ixz='0' iyy='1' iyz='0' izz='1'/>
+      </inertial> 
+  
+      <collision name="geom">
+        <geometry>
+          <cylinder radius="0.020" length="0.075"/>
+        </geometry>
+      </collision>
+   
+      <visual name="visual">
+        <geometry>
+          <cylinder radius="0.020" length="0.075"/>
+        </geometry>
+        <material script="Gazebo/Purple"/>
+      </visual>
+    </link>
+
+<!------------------------------------------------------------------->
+<!--Potes, part inferior-->
+    <link name="RF_down_leg" gravity="0">
+      <origin pose="0.055 0.085135 -0.09286 0.38025 0 0"/>
+  
+      <inertial mass="0.1">
+        <inertia ixx='1' ixy='0' ixz='0' iyy='1' iyz='0' izz='1'/>
+      </inertial> 
+  
+      <collision name="geom">
+        <geometry>
+          <cylinder radius="0.020" length="0.080"/>
+        </geometry>
+      </collision>
+   
+      <visual name="visual">
+        <geometry>
+          <cylinder radius="0.020" length="0.080"/>
+        </geometry>
+        <material script="Gazebo/Green"/>
+      </visual>
+    </link>
+
+    <link name="LF_down_leg" gravity="0">
+      <origin pose="-0.055 0.085135 -0.09286 0.38025 0 0"/>
+  
+      <inertial mass="0.1">
+        <inertia ixx='1' ixy='0' ixz='0' iyy='1' iyz='0' izz='1'/>
+      </inertial> 
+  
+      <collision name="geom">
+        <geometry>
+          <cylinder radius="0.020" length="0.080"/>
+        </geometry>
+      </collision>
+   
+      <visual name="visual">
+        <geometry>
+          <cylinder radius="0.020" length="0.080"/>
+        </geometry>
+        <material script="Gazebo/Red"/>
+      </visual>
+    </link>
+
+    <link name="RB_down_leg" gravity="0">
+      <origin pose="0.055 -0.085135 -0.09286 -0.38025 0 0"/>
+  
+      <inertial mass="0.1">
+        <inertia ixx='1' ixy='0' ixz='0' iyy='1' iyz='0' izz='1'/>
+      </inertial> 
+  
+      <collision name="geom">
+        <geometry>
+          <cylinder radius="0.020" length="0.080"/>
+        </geometry>
+      </collision>
+   
+      <visual name="visual">
+        <geometry>
+          <cylinder radius="0.020" length="0.080"/>
+        </geometry>
+        <material script="Gazebo/Yellow"/>
+      </visual>
+    </link>
+
+    <link name="LB_down_leg" gravity="0">
+      <origin pose="-0.055 -0.085135 -0.09286 -0.38025 0 0"/>
+  
+      <inertial mass="0.1">
+        <inertia ixx='1' ixy='0' ixz='0' iyy='1' iyz='0' izz='1'/>
+      </inertial> 
+  
+      <collision name="geom">
+        <geometry>
+          <cylinder radius="0.020" length="0.080"/>
+        </geometry>
+      </collision>
+   
+      <visual name="visual">
+        <geometry>
+          <cylinder radius="0.020" length="0.080"/>
+        </geometry>
+        <material script="Gazebo/Purple"/>
+      </visual>
+    </link>
+
+<!------------------------------------------------------------------->
+<!--Peus-->    
+    <link name="RF_paw" gravity="0">
+      <origin pose="0.055 0.099985 -0.130 0 0 0"/>
+  
+      <inertial mass="0.1">
+        <inertia ixx='1' ixy='0' ixz='0' iyy='1' iyz='0' izz='1'/>
+      </inertial> 
+  
+      <collision name="geom">
+        <geometry>
+          <sphere radius="0.015"/>
+        </geometry>
+	<surface>
+	  <friction>
+            <ode mu='1.000000' mu2='1.000000'/>
+          </friction>
+	</surface>
+      </collision>
+    
+      <visual name="visual">
+        <geometry>
+          <sphere radius="0.015"/>
+        </geometry>
+        <material script="Gazebo/Turquoise"/>
+      </visual>
+    </link>
+
+    <link name="LF_paw" gravity="0">
+      <origin pose="-0.055 0.099985 -0.130 0 0 0"/>
+  
+      <inertial mass="0.1">
+        <inertia ixx='1' ixy='0' ixz='0' iyy='1' iyz='0' izz='1'/>
+      </inertial> 
+  
+      <collision name="geom">
+        <geometry>
+          <sphere radius="0.015"/>
+        </geometry>
+	<surface>
+	  <friction>
+            <ode mu='1.000000' mu2='1.000000'/>
+          </friction>
+	</surface>
+      </collision>
+    
+      <visual name="visual">
+        <geometry>
+          <sphere radius="0.015"/>
+        </geometry>
+        <material script="Gazebo/Turquoise"/>
+      </visual>
+    </link>
+
+    <link name="RB_paw" gravity="0">
+      <origin pose="0.055 -0.099985 -0.130 0 0 0"/>
+  
+      <inertial mass="0.1">
+        <inertia ixx='1' ixy='0' ixz='0' iyy='1' iyz='0' izz='1'/>
+      </inertial> 
+  
+      <collision name="geom">
+        <geometry>
+          <sphere radius="0.015"/>
+        </geometry>
+	<surface>
+	  <friction>
+            <ode mu='1.000000' mu2='1.000000'/>
+          </friction>
+	</surface>
+      </collision>
+    
+      <visual name="visual">
+        <geometry>
+          <sphere radius="0.015"/>
+        </geometry>
+        <material script="Gazebo/Turquoise"/>
+      </visual>
+    </link>
+
+    <link name="LB_paw" gravity="0">
+      <origin pose="-0.055 -0.099985 -0.130 0 0 0"/>
+  
+      <inertial mass="0.1">
+        <inertia ixx='1' ixy='0' ixz='0' iyy='1' iyz='0' izz='1'/>
+      </inertial> 
+  
+      <collision name="geom">
+        <geometry>
+          <sphere radius="0.015"/>
+        </geometry>
+	<surface>
+	  <friction>
+            <ode mu='1.000000' mu2='1.000000'/>
+          </friction>
+	</surface>
+      </collision>
+    
+      <visual name="visual">
+        <geometry>
+          <sphere radius="0.015"/>
+        </geometry>
+        <material script="Gazebo/Turquoise"/>
+      </visual>
+    </link>
+
+
+
+
+
+    </link>
+  
+<!--<link name="castor">
+      <origin pose="-0.200 0 0.04 0 0 0"/>
+  
+      <inertial mass="0.1">
+        <inertia ixx='1' ixy='0' ixz='0' iyy='1' iyz='0' izz='1'/>
+      </inertial> 
+  
+      <collision name="geom">
+        <geometry>
+          <sphere radius="0.04"/>
+        </geometry>
+      </collision>
+    
+      <visual name="visual">
+        <geometry>
+          <sphere radius="0.04"/>
+        </geometry>
+        <material script="Gazebo/FlatBlack"/>
+      </visual>
+
+    <sensor name='base_contact_sensor' type='contact' always_on='1' update_rate='100' visualize="true">
+        <topic>~/contact</topic>
+        <origin pose='0 0 0 0 -0 0'/>
+        <contact>
+          <collision name='geom'/>
+        </contact>
+        <plugin name='gazebo_contact' filename='libHlaContactPlugin.so'/>
+      </sensor>-->
+
+      <sensor name="rfidtag" type="rfidtag" always_on='1' visualize='true'>
+        <topic>~/rfidtag</topic>
+      </sensor>
+    </link>
+  
+
+
+
+    <joint type="revolute" name="left_wheel_hinge">
+      <origin pose="0 0 0.04 0 0 0"/>
+      <child link="left_wheel"/>
+      <parent link="chassis"/>
+      <axis xyz="0 1 0"/>
+    </joint>
+    
+    <joint type="revolute" name="right_wheel_hinge">
+      <origin pose="0 0 -0.04 0 0 0"/>
+      <child link="right_wheel"/>
+      <parent link="chassis"/>
+      <axis xyz="0 1 0"/>
+    </joint>
+    
+    <joint type="ball" name="ball_joint">
+      <child link="castor"/>
+      <parent link="chassis"/>
+    </joint>
+    <!--<plugin filename="libHlaModelPlugin.so" name="plugin"/>
+    <plugin filename="libHlaRFIDTagPlugin.so" name="rfid1"/>-->
+  
+  </model>
+
+</gazebo>
